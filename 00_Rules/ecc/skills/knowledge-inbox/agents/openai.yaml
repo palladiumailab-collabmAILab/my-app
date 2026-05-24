@@ -1,0 +1,7 @@
+interface:
+  display_name: "Knowledge Inbox"
+  short_description: "Use short inbox commands"
+  default_prompt: "Use $knowledge-inbox to process inbox."
+
+policy:
+  allow_implicit_invocation: true

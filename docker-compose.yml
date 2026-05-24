@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    image: my-app-dev:latest
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: python -m my_app
+
