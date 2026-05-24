@@ -15,8 +15,8 @@ Before substantial work, read:
 ## Repository Layout
 
 - `00_Rules/`: copied development rules.
-- `src/`: application package source.
-- `tests/`: pytest test suite.
+- `10_Specifications/`: specification documents and templates.
+- `20_Source/src/`: application package source.
+- `20_Source/tests/`: pytest test suite.
 
 Keep new folders out of the root unless the application actually needs them.
-

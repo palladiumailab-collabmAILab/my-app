@@ -1,5 +1,4 @@
 import pytest
-
 from my_app import __version__
 from my_app.__main__ import main
 

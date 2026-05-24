@@ -7,8 +7,9 @@ Minimal Python application workspace.
 | Path | Purpose |
 | --- | --- |
 | `00_Rules/` | Development rules copied into this repository |
-| `src/my_app/` | Application package |
-| `tests/` | pytest test suite |
+| `10_Specifications/` | Specification documents and reusable specification templates |
+| `20_Source/src/my_app/` | Application package |
+| `20_Source/tests/` | pytest test suite |
 | `Dockerfile` | Reproducible Python development image |
 | `docker-compose.yml` | Local command surface for build, run, and checks |
 
@@ -19,7 +20,7 @@ docker-compose build app
 docker-compose run --rm app python -m my_app
 docker-compose run --rm app pytest
 docker-compose run --rm app ruff check .
-docker-compose run --rm app mypy src tests
+docker-compose run --rm app mypy 20_Source/src 20_Source/tests
 docker-compose run --rm app black --check .
 docker-compose run --rm app isort --check-only .
 ```

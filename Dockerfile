@@ -7,11 +7,9 @@ ENV PIP_NO_CACHE_DIR=1
 WORKDIR /app
 
 COPY pyproject.toml README.md ./
-COPY src ./src
-COPY tests ./tests
+COPY 20_Source ./20_Source
 
 RUN python -m pip install --upgrade pip \
     && python -m pip install -e ".[dev]"
 
 CMD ["python", "-m", "my_app"]
-
