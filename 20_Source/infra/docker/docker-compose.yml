@@ -1,11 +1,13 @@
+name: my-app
+
 services:
   app:
     build:
-      context: .
+      context: ../../..
       dockerfile: 20_Source/infra/docker/Dockerfile
     image: my-app-dev:latest
     working_dir: /app
     volumes:
-      - .:/app
+      - ../../..:/app
     command: python -m my_app
 

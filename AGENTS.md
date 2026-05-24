@@ -18,6 +18,6 @@ Before substantial work, read:
 - `10_Specifications/`: specification documents and templates.
 - `20_Source/src/`: application package source.
 - `20_Source/tests/`: pytest test suite.
-- `20_Source/infra/`: source-side infrastructure files.
+- `20_Source/infra/`: source-side infrastructure files, including Docker Compose.
 
 Keep new folders out of the root unless the application actually needs them.
