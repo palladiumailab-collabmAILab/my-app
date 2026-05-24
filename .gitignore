@@ -1,0 +1,46 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.venv/
+venv/
+
+# Node
+node_modules/
+dist/
+build/
+coverage/
+
+# Temporary files
+tmp/
+temp/
+
+# Obsidian user-local state
+30_KnowledgeVault/.obsidian/workspace*.json
+30_KnowledgeVault/.obsidian/cache/
+30_KnowledgeVault/.obsidian/plugins/*/data.json
+30_KnowledgeVault/.trash/

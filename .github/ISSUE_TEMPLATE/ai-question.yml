@@ -1,0 +1,44 @@
+name: AI Question
+description: Ask AI to retrieve, explain, or summarize information from the vault later.
+title: "[question] "
+labels:
+  - ai-question
+  - needs-answer
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask what you want to pull out of the knowledge base. AI can search the vault and answer later.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What do you want to know, remember, compare, or decide?
+      placeholder: |
+        例:
+        - 情報整理基盤の次アクションは？
+        - 最近保存したAI関連の記事を要約して
+        - このプロジェクトで未決のことは？
+    validations:
+      required: true
+  - type: textarea
+    id: hints
+    attributes:
+      label: Hints
+      description: Optional words, URLs, people, dates, or project names that might help AI search.
+      placeholder: |
+        例:
+        Obsidian, GitHub, Siri, Gemini
+    validations:
+      required: false
+  - type: dropdown
+    id: answer_style
+    attributes:
+      label: Answer style
+      options:
+        - short
+        - detailed
+        - action-list
+        - decision-support
+    validations:
+      required: true

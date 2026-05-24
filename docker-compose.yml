@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: 20_Source/infra/docker/Dockerfile
+    image: my-app-dev:latest
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    command: python -m my_app
