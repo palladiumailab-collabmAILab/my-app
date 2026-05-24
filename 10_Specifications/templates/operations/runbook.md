@@ -11,8 +11,8 @@
 ## Local Development
 
 ```powershell
-docker-compose build app
-docker-compose run --rm app pytest
+docker-compose -f 30_Docker/docker-compose.yml build app
+docker-compose -f 30_Docker/docker-compose.yml run --rm app pytest
 ```
 
 ## Release Procedure

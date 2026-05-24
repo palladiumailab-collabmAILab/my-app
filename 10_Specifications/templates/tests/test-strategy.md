@@ -12,11 +12,11 @@
 
 | Gate | Command or Evidence | Required |
 | --- | --- | --- |
-| Formatting | `docker-compose run --rm app black --check .` | Yes |
-| Import order | `docker-compose run --rm app isort --check-only .` | Yes |
-| Lint | `docker-compose run --rm app ruff check .` | Yes |
-| Type check | `docker-compose run --rm app mypy 20_Source/src 20_Source/tests` | Yes |
-| Tests | `docker-compose run --rm app pytest` | Yes |
+| Formatting | `docker-compose -f 30_Docker/docker-compose.yml run --rm app black --check .` | Yes |
+| Import order | `docker-compose -f 30_Docker/docker-compose.yml run --rm app isort --check-only .` | Yes |
+| Lint | `docker-compose -f 30_Docker/docker-compose.yml run --rm app ruff check .` | Yes |
+| Type check | `docker-compose -f 30_Docker/docker-compose.yml run --rm app mypy 20_Source/src 20_Source/tests` | Yes |
+| Tests | `docker-compose -f 30_Docker/docker-compose.yml run --rm app pytest` | Yes |
 
 ## Test Data
 
