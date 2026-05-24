@@ -1,6 +1,8 @@
 services:
   app:
-    build: .
+    build:
+      context: .
+      dockerfile: 20_Source/infra/docker/Dockerfile
     image: my-app-dev:latest
     working_dir: /app
     volumes:

@@ -10,7 +10,7 @@ Minimal Python application workspace.
 | `10_Specifications/` | Specification documents and reusable specification templates |
 | `20_Source/src/my_app/` | Application package |
 | `20_Source/tests/` | pytest test suite |
-| `Dockerfile` | Reproducible Python development image |
+| `20_Source/infra/docker/Dockerfile` | Reproducible Python development image |
 | `docker-compose.yml` | Local command surface for build, run, and checks |
 
 ## Commands
